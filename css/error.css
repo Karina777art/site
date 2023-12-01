@@ -192,7 +192,7 @@ header nav{
 
 @media (max-width: 576px){
     .menu-list{
-        right: -20px;
+        right: 10px;
     }
     .menu-logo {
         margin: 0 65px 0 45px;
