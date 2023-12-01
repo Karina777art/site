@@ -186,7 +186,8 @@ header nav{
         text-align: center;
     }
     .contact-list li:nth-child(3){
-        max-width: 301px;}
+        max-width: 301px;
+    }
 }
 
 @media (max-width: 576px){
