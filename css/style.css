@@ -185,7 +185,7 @@ button{
     flex-direction: column;
     row-gap: 16px;
 }
-.home__item__h3{
+.home__item__h1{
     display: flex;
     align-items: center;
     
@@ -483,7 +483,7 @@ button{
     letter-spacing: 0.04688rem;
 }
 .contact-box__section{
-    background-image: url(../images/bgcontactbox.jpg);
+    background-image: url(../images/bgcontactbox.webp);
     background-color: #2A00A2;
     background-repeat: no-repeat;
     background-size: cover;
@@ -574,7 +574,7 @@ button{
 }
 @media (max-width: 1350px){
     .home__section{
-        background-image: url(../images/boarding.png);
+        background-image: url(../images/boarding.webp);
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: bottom right;
