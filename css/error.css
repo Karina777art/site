@@ -13,6 +13,10 @@
 .error img{
     width: 100%;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 ul{
     list-style: none;
 }
@@ -37,14 +41,14 @@ header nav{
 }
 .menu-logo{
     color: #FCFCFC;
-    margin: 0 176px 0 45px;
+    margin: 0 125px 0 45px;
 }
 .menu-list{ 
     display: none;
     z-index: 2;
-    position: sticky;
-    top: 30px;
-    right: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     background-color: #2A00A2;
     color:  #F3EFFF;
 }
@@ -52,13 +56,16 @@ header nav{
     display: block;
 }
 .menu__item{
-    padding: 29px 269px 29px 95px;
+    padding: 29px 0 29px 95px;
 }
 .menu__item:first-child{
     display: flex;
     align-items: center;
     padding: 34px 0 26px;
     box-shadow: 0 0px 2px #BCA4FF;
+}
+.menu__item:first-child svg{
+   margin-right: 30px;
 }
 .menu__item:hover{
     background-color: #5F2EEA;
@@ -177,5 +184,13 @@ header nav{
     }
     .footer-list__item{
         text-align: center;
+    }
+}
+@media (max-width: 576px){
+    .menu-list{
+        right: -20px;
+    }
+    .menu-logo {
+        margin: 0 65px 0 45px;
     }
 }

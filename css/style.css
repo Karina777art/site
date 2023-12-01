@@ -33,16 +33,19 @@ header nav{
     line-height: 3.4375rem;
     color: #5F2EEA;
 }
+.menu{
+    position: relative;
+}
 .menu-logo{
     color: #FCFCFC;
-    margin: 0 176px 0 45px;
+    margin: 0 125px 0 45px;
 }
 .menu-list{ 
     display: none;
     z-index: 2;
-    position: sticky;
-    top: 30px;
-    right: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     background-color: #2A00A2;
     color:  #F3EFFF;
 }
@@ -50,13 +53,16 @@ header nav{
     display: block;
 }
 .menu__item{
-    padding: 29px 269px 29px 95px;
+    padding: 29px 0 29px 95px;
 }
 .menu__item:first-child{
     display: flex;
     align-items: center;
     padding: 34px 0 26px;
     box-shadow: 0 0px 2px #BCA4FF;
+}
+.menu__item:first-child svg{
+   margin-right: 30px;
 }
 .menu__item:hover{
     background-color: #5F2EEA;
@@ -661,7 +667,7 @@ button{
         background-size: 100%;
     }
     .home__h1{
-        margin-top: 388px;
+        margin-top: 60%;
     }
     .button-group{
     padding-bottom: 87px;
@@ -714,5 +720,11 @@ button{
     }
     .tool-list__text{
         padding-bottom: 60px;
+    }
+    .menu-list{
+        right: -20px;
+    }
+    .menu-logo {
+        margin: 0 65px 0 45px;
     }
 }
