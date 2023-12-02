@@ -318,6 +318,10 @@ button{
     color:  #5F2EEA;
     border-radius: 40px;
 }
+.benefits__item__button:hover{
+    color: #FCFCFC;
+    background-color: #5F2EEA;
+}
 .photo-gallery{
     padding:0 0px 121px;
     display: flex;
@@ -333,7 +337,7 @@ button{
 }
 .photo-gallery__photos{
     display: flex;
-    column-gap: 32px;
+    gap: 32px;
     overflow: hidden;
 }
 .photo-gallery__photos > .photos__item{
@@ -372,9 +376,11 @@ button{
     border-radius: 100%;
     border: 2px solid #5F2EEA;
     background-color: transparent;
-    color: #5F2EEA;
     box-shadow: 0 0 0px 8px #E4DAFF;
-    
+}
+.check-list__item__button:hover{
+    box-shadow: 0 0 10px 8px  #5F2EEA;
+    border: 2px solid #E4DAFF;
 }
 
 .planning-ahead__check-list {
@@ -518,7 +524,7 @@ button{
     border: 2px solid #FCFCFC;
     color:#FCFCFC; 
 }
-.simple-button-white:hover{
+.simple-button:hover{
     box-shadow: 0 0 0px 8px #E4DAFF;
 }
 
@@ -607,7 +613,9 @@ button{
     .planning-ahead__text>.text__h2{
         text-align: start;
     }
-    
+    .photos__item img {
+        width: 469px;
+    }
     .planning-ahead__check-list{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto repeat(5,110px);
@@ -636,6 +644,10 @@ button{
 @media (max-width: 949px){
     .benefits{
         justify-content: center;
+    }
+    .photo-gallery__photos{
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 900px){
@@ -716,9 +728,10 @@ button{
         display: none;
     }
     .photos__item img {
-        width: 343px;
+        width: 323px;
     }
-    .tool-list__text{
+    
+    .text{
         padding-bottom: 60px;
     }
     .menu-list{
