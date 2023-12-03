@@ -214,11 +214,7 @@ button{
     letter-spacing: 0.04688rem;
 }
 .tool-list{
-    padding:0 0px 135px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    padding:0 0px 135px;
 }
 .tool-list__section{
     display: flex;
@@ -324,9 +320,6 @@ button{
 }
 .photo-gallery{
     padding:0 0px 121px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .photo-gallery__section{
     display: flex;
@@ -460,6 +453,9 @@ button{
     width: 77.84px;
     height: 77.84px;
     border-radius: 100%;
+}
+.testimonials__text__button:hover{
+    background-color: #BCA4FF;
 }
 .testimonials__benefits .benefits__item{
     position: relative;
