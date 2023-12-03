@@ -720,13 +720,15 @@ button{
     }
 }
 @media (max-width: 576px){
+    .home__h1{
+        font-size: 3.5rem;
+    }
     .testimonials__text__button-group{
         display: none;
     }
     .photos__item img {
         width: 323px;
     }
-    
     .text{
         padding-bottom: 60px;
     }
