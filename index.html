@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <nav>
-                <p class="logo header-logo"><a href="#">Travelulu</a></p>
+                <p class="logo header-logo"><a href="index.html" target="_blank" rel="noopener noreferrer">Travelulu</a></p>
                 <div class="menu">
                     <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="28" height="4" rx="2" fill="#5F2EEA"/>
@@ -21,27 +21,27 @@
                     <rect y="14" width="28" height="4" rx="2" fill="#5F2EEA"/>
                     </svg>
                     <ul class="menu-list">
-                        <li class="menu__item"><p class="logo menu-logo">Travelulu</p>
+                        <li class="menu__item"><p class="logo menu-logo"><a href="index.html">Travelulu</a></p>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3.51465" y="0.686279" width="28" height="4" rx="2" transform="rotate(45 3.51465 0.686279)" fill="#F3EFFF"/>
                                 <rect width="28" height="4" rx="2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 20.4863 0.686279)" fill="#F3EFFF"/>
                             </svg>
                         </li>
-                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
                         <li class="menu__item">
                             <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="1.09277" width="10.8204" height="1.54577" rx="0.772885" transform="rotate(45 1.09277 0)" fill="#F3EFFF"/>
                                 <rect width="10.8204" height="1.54577" rx="0.772885" transform="matrix(-0.707107 0.707107 0.707107 0.707107 7.65137 6.56958)" fill="#F3EFFF"/>
                             </svg>
-                            <a class="menu__link menu__title" href="#">
+                            <a class="menu__link menu__title" href="#services">
                             Services
                             </a>
                             <ul class="sub-menu">
-                                <li>Planning</li>
-                                <li>Financing</li>
-                                <li>Purchasing</li>
-                                <li>Reviewing</li>
-                                <li>Flying</li>
+                                <li><a href="#services">Planning</a></li>
+                                <li><a href="#services">Financing</a></li>
+                                <li><a href="#services">Purchasing</a></li>
+                                <li><a href="#services">Reviewing</a></li>
+                                <li><a href="#services">Flying</a></li>
                             </ul>
                         </li>
                         <li class="menu__item">
@@ -49,12 +49,20 @@
                                 <rect x="1.09277" width="10.8204" height="1.54577" rx="0.772885" transform="rotate(45 1.09277 0)" fill="#F3EFFF"/>
                                 <rect width="10.8204" height="1.54577" rx="0.772885" transform="matrix(-0.707107 0.707107 0.707107 0.707107 7.65137 6.56958)" fill="#F3EFFF"/>
                             </svg>
-                            <a class="menu__link" href="#">
+                            <a class="menu__link menu__title" href="#continents">
                             Continents
                             </a>
+                            <ul class="sub-menu">
+                                <li><a href="#continents">North America</a></li>
+                                <li><a href="#continents">South America</a></li>
+                                <li><a href="#continents">Asia</a></li>
+                                <li><a href="#continents">Africa</a></li>
+                                <li><a href="#continents">Europe</a></li>
+                                <li><a href="#continents">Australia</a></li>
+                            </ul>
                         </li>
-                        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Privacy</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#privacy">Privacy</a></li>
                     </ul>
                 </div>
             </nav>    
@@ -63,15 +71,19 @@
 
     <section class="home">
         <div class="container">
-            <div class="home__section">
+            <div class="home__section" id="home">
                 <h1 class="home__h1">Plan your next big trip overseas.</h1>
                 <div class="button-group">
-                    <button class="simple-button simple-button-dark" aria-label="BEGIN PLANS">
-                        BEGIN PLANS
-                    </button>
-                    <button class="simple-button simple-button-light" aria-label="REVIEW PLANS">
-                        REVIEW PLANS
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="simple-button simple-button-dark" aria-label="BEGIN PLANS">
+                            BEGIN PLANS
+                        </button>
+                    </form>
+                    <form action="error.html" target="_blank">
+                        <button class="simple-button simple-button-light" aria-label="REVIEW PLANS">
+                            REVIEW PLANS
+                        </button>
+                    </form>
                 </div>
                 <div class="home__image-bg"><img src="images/boarding.webp" alt="background"></div>
             </div>    
@@ -124,19 +136,25 @@
                         <div class="benefits__item__photo"><img src="images/benefits-time.webp" alt="time"></div>
                         <h3 class="benefits__item__h3">Plan Trip Dates</h3>
                         <p class="benefits__item__p">orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        <form action="error.html" target="_blank">
+                            <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        </form>
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__item__photo"><img src="images/benefits-plane.webp" alt="plane"></div>
                         <h3 class="benefits__item__h3">Pay For Your Flights</h3>
                         <p class="benefits__item__p">orem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        <form action="error.html" target="_blank">
+                            <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        </form>
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__item__photo"><img src="images/benefits-money.webp" alt="money"></div>
                         <h3 class="benefits__item__h3">Plan Your Finances</h3>
                         <p class="benefits__item__p">orem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        <form action="error.html" target="_blank">
+                            <button class="benefits__item__button" aria-label="LEARN MORE">LEARN MORE</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -171,51 +189,63 @@
                 <div class="planning-ahead__img"><img src="images/checklist-image.webp" alt="planning"></div>   
                 <div class="check-list__item check-list__item-1">
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
                 <div class="check-list__item check-list__item-2">
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
                 <div class="check-list__item check-list__item-3">
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7.96317 7.96317L1 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
                     
                 <div class="check-list__item check-list__item-4">
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
                 </div>
                 <div class="check-list__item check-list__item-5">
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
                 </div>
                 <div class="check-list__item check-list__item-6">
-                    <button class="check-list__item__button" aria-label="check list tips">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form action="error.html" target="_blank">
+                        <button class="check-list__item__button" aria-label="check list tips">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L1.03683 7.96317L8 14.9263" stroke="#5F2EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                     <p class="check-list__item__p">Lorem ipsum dolor sit amet, consectetur ds.</p>
                 </div>     
             </div>
@@ -278,48 +308,50 @@
   <section class="contact-box">
     <div class="container">
         <div class="contact-box__section">
-            <h1 class="contact-box__h1"><a href="error.html" target="_blank" rel="noopener noreferrer">Need more information to get started?</a></h1>
-            <button class="simple-button simple-button-white" aria-label="CONTACT US">
-            CONTACT US
-            </button>
+            <h1 class="contact-box__h1">Need more information to get started?</h1>
+            <form action="error.html" target="_blank">
+                <button class="simple-button simple-button-white" aria-label="CONTACT US">
+                CONTACT US
+                </button>
+            </form>
         </div>
     </div>
   </section>
   <footer>
     <div class="container">
         <nav>
-            <ul class="footer-list privacy-list">
+            <ul class="footer-list privacy-list" id="privacy">
                 <li class="footer-list__item">
-                    <p class="logo footer-logo">Travelulu</p>
+                    <p class="logo footer-logo"><a href="index.html" target="_blank" rel="noopener noreferrer">Travelulu</a></p>
                 </li>
-                <li class="footer-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ullamcorper magna, ac laoreet ex. Integer a consequat lectus. Nullam tortor sem</li>
-                <li class="footer-list__item">Copyright 2021, All Rights Reserved.</li>
+                <li class="footer-list__item"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ullamcorper magna, ac laoreet ex. Integer a consequat lectus. Nullam tortor sem</a></li>
+                <li class="footer-list__item"><a href="#">Copyright 2021, All Rights Reserved.</a></li>
             </ul>
             <ul class="footer-list">
-                <li class="footer-list__item">Services</li>
-                <li class="footer-list__item">Planning</li>
-                <li class="footer-list__item">Financing</li>
-                <li class="footer-list__item">Purchasing</li>
-                <li class="footer-list__item">Meeting</li>
-                <li class="footer-list__item">Flying</li>
+                <li class="footer-list__item" id="services"><a href="#">Services</a></li>
+                <li class="footer-list__item"><a href="#">Planning</a></li>
+                <li class="footer-list__item"><a href="#">Financing</a></li>
+                <li class="footer-list__item"><a href="#">Purchasing</a></li>
+                <li class="footer-list__item"><a href="#">Meeting</a></li>
+                <li class="footer-list__item"><a href="#">Flying</a></li>
             </ul>
-            <ul class="footer-list">
-                <li class="footer-list__item">Continents</li>
-                <li class="footer-list__item"> North America</li>
-                <li class="footer-list__item">South America</li>
-                <li class="footer-list__item">Asia</li>
-                <li class="footer-list__item">Africa</li>
-                <li class="footer-list__item">Europe</li>
-                <li class="footer-list__item">Australia</li>
+            <ul class="footer-list" id="continents">
+                <li class="footer-list__item"><a href="#">Continents</a></li>
+                <li class="footer-list__item"><a href="#">North America</a></li>
+                <li class="footer-list__item"><a href="#">South America</a></li>
+                <li class="footer-list__item"><a href="#">Asia</a></li>
+                <li class="footer-list__item"><a href="#">Africa</a></li>
+                <li class="footer-list__item"><a href="#">Europe</a></li>
+                <li class="footer-list__item"><a href="#">Australia</a></li>
             </ul>
             <ul class="footer-list contact-list">
-                <li class="footer-list__item">Contact</li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">travelulu@website.com</a></li>
-                <li class="footer-list__item">22 Street Address,
+                <li class="footer-list__item"><a href="#">Contact</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="mailto:travelulu@website.com">travelulu@website.com</a></li>
+                <li class="footer-list__item"><a href="https://clck.ru/374hWU=Адрес" target="_blank">22 Street Address,
                     Suburb Address
                     Main City, PO Box
-                    Country</li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">08 8888 88888</a></li>
+                    Country</a></li>
+                <li class="footer-list__item" id="contact"><a class="footer-list__link" href="tel:08888888888">08 8888 88888</a></li>
             </ul>
         </nav>   
     </div>
