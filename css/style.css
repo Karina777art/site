@@ -142,6 +142,7 @@ header nav{
     gap: 27px;
     padding-bottom: 195px;
 }
+
 button{
     border: none;
     font-family: Poppins;
@@ -690,6 +691,10 @@ button{
     }
     .photos__item img{
         width: 400px;
+    }
+    .button-group form{
+        display: flex;
+        flex-grow: 1;
     }
     .simple-button{
         flex-grow: 1;
