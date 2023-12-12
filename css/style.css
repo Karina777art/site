@@ -334,7 +334,7 @@ button{
 .photo-gallery__photos{
     display: flex;
     gap: 32px;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 .photo-gallery__photos > .photos__item{
     border-radius: 20px;
